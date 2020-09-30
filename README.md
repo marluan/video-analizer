@@ -1,4 +1,4 @@
-# video-analizer
+# video-anayizer
 
 Macro para analise de videos de tibia para auxiliar na analise de danos dos monstros.
 
