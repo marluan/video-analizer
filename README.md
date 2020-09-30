@@ -11,7 +11,7 @@ Para utilizar seguir os seguintes passos:
 
 3- posicionar o mouse na linha mais recente do server log e apertar Ctrl+l
 
-[!Passo a passo](blob/master/passos.png?raw=true)
+[!Passo a passo](passos.png?raw=true)
 
 
 4- apertar Ctrl+s e dar play no video.
