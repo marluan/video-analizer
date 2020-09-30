@@ -5,7 +5,8 @@ CoordMode, Pixel, Screen
 CoordMode, Mouse, Screen
 
 InputBox,creatureFolder,,Digite o nome da criatura
-InputBox,timerRecord,,Digite o tempo de gravação
+InputBox,timerRecord,,Digite o tempo de gravação em minutos
+timerRecord:=timerRecord*60*1000
 IfNotExist, %A_ScriptDir%\%creatureFolder%\Turnos
 	FileCreateDir, %A_ScriptDir%\%creatureFolder%\Turnos
 
