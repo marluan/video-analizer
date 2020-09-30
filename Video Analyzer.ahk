@@ -5,6 +5,7 @@ CoordMode, Pixel, Screen
 CoordMode, Mouse, Screen
 
 InputBox,creatureFolder,,Digite o nome da criatura
+InputBox,timerRecord,,Digite o tempo de gravação
 IfNotExist, %A_ScriptDir%\%creatureFolder%\Turnos
 	FileCreateDir, %A_ScriptDir%\%creatureFolder%\Turnos
 
@@ -47,9 +48,17 @@ Loop,
 			;FileAppend, corAntiga	%corPersonagemOld%	corNova	%corPersonagem%	diffCores	%diffCores%	turno:	%currentTurno%`n,%A_ScriptDir%\%creatureFolder%\Cores.txt
 			currentTurno++
 			Timer("coldownHit",500)
+			
+			if(Timer("timerRecord"))
+				ExitApp
 		}
 	}
 	Sleep, 10
+	IfWinExist, Tibia
+	{
+		MsgBox,,,Por motivos de segurança não utilize este programa junto com o Client do Tibia. Ele não executará
+		ExitApp
+	}
 }
 
 
@@ -78,8 +87,10 @@ return
 ^s::
 if(start)
 	start:=false
-else
+else {
 	start:=true
+	Timer("timerRecord",timerRecord)
+	}
 return
 
 saveScreen(x,y,w,h,filePath) {
