@@ -11,7 +11,8 @@ Para utilizar seguir os seguintes passos:
 
 3- posicionar o mouse na linha mais recente do server log e apertar Ctrl+l
 
-[!Passo a passo](passos.png?raw=true)
+![passos](https://user-images.githubusercontent.com/9350815/94685381-bb773580-02ff-11eb-90a3-b48f1189e56d.png)
+
 
 
 4- apertar Ctrl+s e dar play no video.
