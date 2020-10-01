@@ -20,9 +20,9 @@ if(!MagicName4) {
 	IniWrite, %MagicName4%, %creatureDir%\creature.ini, magics,Magic4
 }
 
-Gui, Add, Picture, x12 y9 w680 h610 vTurnoImg, 
-Gui, Add, Picture, x12 y619 w500 h80 vServerLogImg, 
-Gui, Add, Picture, x572 y619 w60 h30 vTimeImg, 
+Gui, Add, Picture, x1 y1 w780 h710 vTurnoImg, 
+Gui, Add, Picture, x1 y581 w680 h108 vServerLogImg, 
+Gui, Add, Picture, x621 y581 w60 h30 vTimeImg, 
 Gui, Add, Text, x802 y39 w90 h20, Melee
 Gui, Add, Edit, x952 y39 w50 h20 vMeleeDmg, 
 Gui, Add, Text, x802 y69 w130 h20 vMagic1, 
@@ -43,7 +43,7 @@ Gui, Add, Button, default x962 y649 w110 h30 gProximo, Proximo
 
 ; Generated using SmartGUI Creator for SciTE
 Gui, +Resize
-Gui, Show, AutoSize Center w1099 h700, Creature Analyzer
+Gui, Show, w1099 h700, Creature Analyzer
 
 refreshTurnos()
 

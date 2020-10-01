@@ -57,8 +57,8 @@ Loop,
 	Sleep, 10
 	IfWinExist, Tibia
 	{
-		MsgBox,,,Por motivos de segurança não utilize este programa junto com o Client do Tibia. Ele não executará
-		ExitApp
+		;MsgBox,,,Por motivos de segurança não utilize este programa junto com o Client do Tibia. Ele não executará
+		;ExitApp
 	}
 }
 
